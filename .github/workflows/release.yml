@@ -42,8 +42,8 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
           push: true
-          tags: | 
-            miguelndecarvalho/speedtest-exporter:latest
-            miguelndecarvalho/speedtest-exporter:${{ steps.tag.outputs.tag }}
-            ghcr.io/miguelndecarvalho/speedtest-exporter:latest
-            ghcr.io/miguelndecarvalho/speedtest-exporter:${{ steps.tag.outputs.tag }}
+          tags: |
+            easen/speedtest-exporter:latest
+            easen/speedtest-exporter:${{ steps.tag.outputs.tag }}
+            ghcr.io/easen/speedtest-exporter:latest
+            ghcr.io/easen/speedtest-exporter:${{ steps.tag.outputs.tag }}
